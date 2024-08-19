@@ -1,0 +1,7 @@
+/dev/vg0/lv_root	/	ext4	rw,relatime 0 1
+UUID=60442852-5204-4b6c-8030-ed3b437903a2	/boot	ext4	rw,relatime 0 2
+/dev/vg1/media		/video  ext4    rw,relatime 0 0
+/dev/vg0/lv_swap	swap	swap	defaults	0 0
+/dev/cdrom	/media/cdrom	iso9660	noauto,ro 0 0
+/dev/usbdisk	/media/usb	vfat	noauto	0 0
+tmpfs	/tmp	tmpfs	nosuid,nodev	0	0
