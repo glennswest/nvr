@@ -1,0 +1,12 @@
+.exports
+.jwt_secret
+.timeline
+.vacuum
+backup.db
+backup_config.yaml
+config.yaml
+frigate.db
+frigate.db-shm
+frigate.db-wal
+
+
