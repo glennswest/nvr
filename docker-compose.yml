@@ -25,7 +25,8 @@ services:
       - "traefik.http.services.frigate.loadbalancer.server.port=5000"
     privileged: true # this may not be necessary for all setups
     restart: always
-    image: ghcr.io/blakeblackshear/frigate:dev-8e31244@sha256:01774efc23e3d54c6f36f244e408fa70ef4ee29213ea493cfdd9659766e94e8c
+    image: ghcr.io/blakeblackshear/frigate:0.14.0
+    #image: ghcr.io/blakeblackshear/frigate:dev-8e31244@sha256:01774efc23e3d54c6f36f244e408fa70ef4ee29213ea493cfdd9659766e94e8c
     #image: ghcr.io/blakeblackshear/frigate:dev-8e31244
     shm_size: "64mb" # update for your cameras based on calculation above
    #  devices:
