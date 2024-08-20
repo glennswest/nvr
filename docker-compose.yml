@@ -14,6 +14,7 @@ services:
       - "8080:8080"
     volumes:
       - "/var/run/docker.sock:/var/run/docker.sock:ro"
+    restart: always
 
   frigate:
     container_name: frigate
@@ -23,7 +24,7 @@ services:
       - "traefik.http.routers.frigate.entrypoints=web"
       - "traefik.http.services.frigate.loadbalancer.server.port=5000"
     privileged: true # this may not be necessary for all setups
-    restart: unless-stopped
+    restart: always
     image: ghcr.io/blakeblackshear/frigate:dev-8e31244@sha256:01774efc23e3d54c6f36f244e408fa70ef4ee29213ea493cfdd9659766e94e8c
     #image: ghcr.io/blakeblackshear/frigate:dev-8e31244
     shm_size: "64mb" # update for your cameras based on calculation above
